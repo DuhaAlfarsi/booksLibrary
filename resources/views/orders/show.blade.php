@@ -33,7 +33,7 @@
                                 <td>{{ $order->address }}</td>
                                 
                                 <td>
-                                    @if($order->status == null)
+                                    @if($order->status == 'new')
                                     {{-- <a href="" class="btn btn-primary btn-sm">{{__('New')}}</a> --}}
                                     <form action="{{ route('cancel',['id' => $order->id]) }}" method="post">
                                         @csrf
@@ -49,10 +49,10 @@
                                     
                                     @else
                                         <p>
-                                            @if($order->status == 1)
+                                            @if($order->status == 'completed')
                                             Complete
                                             
-                                            @else
+                                            @elseif('canceled')
                                                Cancel
                                             @endif
                                         </p>

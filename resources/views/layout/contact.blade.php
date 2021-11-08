@@ -19,37 +19,11 @@
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
 	            <a href="/home">Home</a>
-	            <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="#">Home 1</a>
-                </li>
-                <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
-                </li>
-	            </ul>
-	          </li> -->
 	          <li>
-	              <a href="#">Search Book</a>
+	              <a href="/maneger">Maneger</a>
 	          </li>
 	          <li>
-              <a href="#">BookStore Categories</a>
-              <!-- <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-              </ul> -->
-	          </li>
-	          <li>
-              <a href="/login">Sing In / Sing Up </a>
+              <a href="/login">Users</a>
 	          </li>
 	          <li>
               <a href="/contact">Contact</a>
@@ -85,10 +59,10 @@
                     <a class="nav-link" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="/maneger">Maneger</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="/login">Users</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>

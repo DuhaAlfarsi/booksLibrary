@@ -11,6 +11,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        $admin = new \App\User();
+        $admin->name = "Super admin";
+        $admin->email = "admin@admin.com";
+        $admin->password = bcrypt(123456);
+        $admin->role = "admin";
+        $admin->save();
+        
+    
+        
     }
 }

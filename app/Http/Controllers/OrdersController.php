@@ -54,7 +54,6 @@ class OrdersController extends Controller
         $order->user_name    =  $request->user_name;
         $order->quantity     =  $request->quantity;
         $order->address =  $request->address;
-        $order->status = null;
         $order->save();
 
         return redirect()->back()->with('success','Order Succefully Add');
@@ -75,14 +74,14 @@ class OrdersController extends Controller
 
     public function complete($id){
         $order = Order::findOrFail($id);
-        $order->status = 1;
+        $order->status = 'completed';
         $order->save();
         Mail::to('email@mail.com')->send(new OrderStatusMail($order));
         return back();
     }
     public function cancel($id){
         $order = Order::findOrFail($id);
-        $order->status = 0;
+        $order->status = 'canceled';
         $order->save();
         Mail::to('email@mail.com')->send(new OrderStatusMail($order));
         return back();

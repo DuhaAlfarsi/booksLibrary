@@ -19,37 +19,11 @@
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
 	            <a href="/home">Home</a>
-	            <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="#">Home 1</a>
-                </li>
-                <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
-                </li>
-	            </ul>
-	          </li> -->
 	          <li>
-	              <a href="#">Search Book</a>
+	              <a href="/maneger">Manager</a>
 	          </li>
 	          <li>
-              <a href="#">BookStore Categories</a>
-              <!-- <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-              </ul> -->
-	          </li>
-	          <li>
-              <a href="/login">Sing In / Sing Up </a>
+              <a href="/login">Users</a>
 	          </li>
 	          <li>
               <a href="/contact">Contact</a>
@@ -85,10 +59,10 @@
                     <a class="nav-link" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="/maneger">Manager</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="/login">Users</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
@@ -101,7 +75,7 @@
         <div class="container">
           <div class="c1">
              <div class="c11">
-                <h1 class="mainhead">Library</h1>
+                <h1 class="mainhead">Library Login</h1>
                 <p class="mainp">Just click the buttons below to toggle between SignIn & SignUp</p>
              </div>
              <div id="left"><h1 class="s1class"><span>SIGN</span><span class="su">IN</span>
@@ -117,6 +91,8 @@
              <input name="email" type="text" placeholder="Email*" class="username"/>
              
              <input name="password" type="password" placeholder="Password*" class="username"/>
+
+             
                 
                 <button class="btn1">Sign Up</button>
              </form>
@@ -140,7 +116,7 @@
       </div>
 		</div>
 
-    <script src=".js/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

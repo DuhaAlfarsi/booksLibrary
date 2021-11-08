@@ -8383,7 +8383,7 @@ h1{
   }
   
   .c11{
-     background-image:url('./img/img5.jpeg');
+     background-image:url('/img/img5.jpeg');
      background-size:300px 400px;
      background-repeat: no-repeat;
      background-color:white;

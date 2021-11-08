@@ -46,7 +46,6 @@ class BooksController extends Controller
             'price' => 'required',
             'quantity' => 'required',
             'category_name' => 'required',
-
         ]);
 
         $book = new Book;
@@ -55,6 +54,7 @@ class BooksController extends Controller
         $book->price     =  $request->price;
         $book->quantity     =  $request->quantity;
         $book->category_id =  $request->category_name;
+        $book->category_name =  Category::findOrFail($request->category_name)->category_name;
         $book->save();
 
         return redirect()->back()->with('success','Book Succefully Add');
@@ -69,7 +69,9 @@ class BooksController extends Controller
      */
     public function show()
     {
-     
+        $books = Book::paginate(2);
+        $data['books'] = Book::paginate(2);
+        return view('books.show')->with($data);
     }
 
     /**
@@ -83,7 +85,7 @@ class BooksController extends Controller
 
 
         $data['book']=Book::findOrfail($id);
-        $data['categories'] = Category::select('id','category_name')->get(); 
+        $data['categories'] = Category::select('id','category_name')->get();
         return view('books.edit',$data);
     }
 

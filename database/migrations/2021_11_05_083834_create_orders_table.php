@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration
             $table->string('user_name');
             $table->string('quantity');
             $table->string('address');
-            $table->boolean('status')->default(NULL);
+            $table->text('status')->default('new');
             $table->timestamps();
         });
     }

@@ -8,7 +8,13 @@ class Book extends Model
 {
 
     public function category(){
-        return $this->belongTo(Category::class);
+        return $this->belongsTo(Category::class);
+    }
+
+    public static function search($q){
+        return Book::where('name','LIKE',"%$q%")
+                    ->orWhere('category_name' , 'LIKE' , "%$q%")
+                    ->paginate(10);
     }
 
 }

@@ -20,6 +20,7 @@ class CreateBooksTable extends Migration
             $table->decimal('price');
             $table->integer('quantity');
             $table->integer('category_id');
+            $table->string('category_name');
             $table->timestamps();
         });
     }
