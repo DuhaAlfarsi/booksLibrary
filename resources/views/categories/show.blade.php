@@ -14,7 +14,6 @@
                             <button type="submit" class="btn btn-success"><a class="btn btn-success" href="/categories/create"> {{__('ADD')}}</a> </button>
 
                         </div>
-
                         <table class="table table-bordered">
                             <tr>
                               <th>#</th>
@@ -59,5 +58,9 @@
         </form>
              
     </div>    
+    <div class="continer">
+    <a href="{{ url('/maneger') }}" class="btn btn-primary btn-sm">Back</a>
+    </div>
+    
 
 

@@ -65,3 +65,7 @@
     </form>
 
 </div>
+
+<div class="continer">
+    <a href="{{ url('/client') }}" class="btn btn-primary btn-sm">Back</a>
+    </div>

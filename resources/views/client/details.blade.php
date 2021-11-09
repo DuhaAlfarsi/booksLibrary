@@ -56,4 +56,7 @@
                 </div>
             </div>
         </div>
+        <div class="continer">
+    <a href="{{ url('/books') }}" class="btn btn-primary btn-sm">Back</a>
+    </div>
 </body>

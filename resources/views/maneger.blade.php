@@ -45,11 +45,6 @@
     <tr>
         <h3> Orders Section </h3>
     </tr>
-    <td>
-        <div class="row ">
-            <div class="col"><a href="{{ url('orders/create') }}" class="btn_b btn-warning btn-lg btn-block">Add
-                    Oeders</a> </div>
-    </td>
     </div>
     <td>
         <div class="row ">

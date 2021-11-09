@@ -9,6 +9,7 @@
         <div class="row">
          <div class="col-12">
              <form action="/books" method="get">
+             Search by Book Name or Book Category
                 <input type="text" name="q">
                 <button>search</button>
             </form>
@@ -63,7 +64,9 @@
           </div>
        </div>
     </form>
-
+    <div class="continer">
+    <a href="{{ url('/client') }}" class="btn btn-primary btn-sm">Back</a>
+    </div>
 </div>
 </body>
 

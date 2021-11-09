@@ -43,4 +43,7 @@
           </div>
       </form>
   </div>
+  <div class="continer">
+    <a href="{{ url('/maneger') }}" class="btn btn-primary btn-sm">Back</a>
+    </div>
   </body>
